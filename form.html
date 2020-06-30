@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/form.css" />
+    <script type='text/javascript' src='//code.jquery.com/jquery-compat-git.js'></script>
+    <script type='text/javascript' src='//igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js'></script>
+    <script src="https://bossanova.uk/jsuites/v3/jsuites.js"></script>
+</head>
+<body>
+    <section>
+        <header>Registro</header>
+        <div id="formu">
+            <!--------Formulario--------->
+            <form method="post" action="contato.php">
+                <input type="hidden" name="id" />
+                <p><input type="text" placeholder="Nome Completo" name="nome" required /></p>
+                <p><input type="text" class="phone" placeholder="Telefone" name="telefone" required  /></p>
+                <p><input type="text" placeholder="Data de Nascimento" name="nascimento" data-mask="dd/mm/yyyy" /></p>
+                <p><input type="email" placeholder="E-mail" name="email" /></p>
+                <p><input type="text" placeholder="Num, Rua, Bairro" id="end" name="endereco" /></p>
+                <p><input type="submit" name="salvar" value="Cadastrar" /></p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;MarceloTieghi</p>
+    </footer>
+    <script>  
+        var behavior = function (val) {
+        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        options = {
+        onKeyPress: function (val, e, field, options) {
+            field.mask(behavior.apply({}, arguments), options);
+        }
+        };
+
+        $('.phone').mask(behavior, options);
+    </script>
+</body>
+</html>

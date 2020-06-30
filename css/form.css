@@ -1,0 +1,51 @@
+body {
+    background: rgba(128, 128, 128, 0.55);
+    font: normal 1.3em arial;
+}
+section {
+    background: rgba(19, 63, 130, 0.60);
+    width: 468px;
+    box-shadow: 3px 3px 10px black;
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 20PX;
+}
+/*=====Cabeçalho====*/
+header {
+    color: white;
+    text-align: center;
+    font: bold 2em arial;
+    text-shadow: 7px 7px black;
+}
+/*=====Formulario======*/
+#formu input {
+    width: 400px;
+    height: 45px;
+    margin: 0px 30px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 9px black;
+}
+    #formu input[type="text"], input[type="email"] {
+        font: bold 1em arial;
+        text-align: center;
+        outline: 0;
+    }
+    #formu input[type="submit"] {
+        border-radius: 4px;
+        box-shadow: 4px 4px 9px black;
+        height: 60px;
+        font: bold 1.7em arial;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        background: rgba(128, 128, 128, 0.94);
+        color: white;
+    }
+input:focus {
+    background: rgb(250, 250, 210);
+}  
+/*=====Rodape=====*/
+footer {
+    text-align: center;
+    font: bold 1em arial;
+    color: white;
+}
