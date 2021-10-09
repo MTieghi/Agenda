@@ -8,7 +8,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <title>Agenda Telefonica</title>
+        <title>Agenda Tel</title>
         <style>
             body {
                 background: rgba(128, 128, 128, 0.55);
